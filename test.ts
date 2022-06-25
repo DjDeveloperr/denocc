@@ -6,7 +6,7 @@ tcc.setErrorFunc((msg) => {
   console.log(msg);
 });
 
-tcc.addLibraryPath("H:\\Projects\\denocc\\tcc\\lib");
+tcc.setOptions("-nostdlib");
 tcc.setOutputType("MEMORY");
 
 tcc.addSymbol(
