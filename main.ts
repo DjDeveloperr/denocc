@@ -1,5 +1,5 @@
 const lib = Deno.dlopen(
-  "./tcc/libtcc.dll",
+  "libtcc",
   {
     tcc_new: {
       parameters: [],
